@@ -1,38 +1,60 @@
+html {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/family2.jpg");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  left: 0;
+  min-height: 100vh;
+}
+
+ol {
+  list-style: none;
+  counter-reset: item;
+}
+li {
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: green;
+  border-radius: 100%;
+  color: white;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-form {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.search-Bar {
+  width: 50%;
+  border: 2px solid green;
+  padding: 10px;
+}
+
+.search-button {
+  background: green;
   color: white;
+  font-size: 1.1em;
+  padding: 8px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-button:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+

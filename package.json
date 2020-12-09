@@ -1,6 +1,7 @@
 {
   "name": "recipe-app",
   "version": "0.1.0",
+  "homepage": "https://recipes.jamesbrierley.co.uk",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
